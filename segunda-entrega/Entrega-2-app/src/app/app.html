@@ -232,30 +232,19 @@
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
       </svg>
-      <h1>Hola!, bienvenido a la {{ title() }}</h1>
-      <p>Felicitaciones <strong>{{usunom}}</strong> !! La aplicación esta corriendo en estos momentos. 🎉</p>
-      <p>Escribir una breve descripción de la función de cada uno.</p>
-      <p>■ src/app:
-■ app.component.ts
-■ app.module.ts
-■ assets/
-■ environments/aca voy a poner las respuesta      </p>
-      <p>aca voy a poner las xcvvsv      </p>
-      <p>aca voy a poner las svs      </p>
-      <p>aca voy a poner las svsd      </p>
+      <h1>Hello, {{ title() }}</h1>
+      <p>Congratulations! Your app is running. 🎉</p>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
       <div class="pill-group">
-        <p><img src="src/assets/captura.png" alt="toto"width="200" heigth="100"/></p>
-        <p></p>
         @for (item of [
           { title: 'Explore the Docs', link: 'https://angular.dev' },
           { title: 'Learn with Tutorials', link: 'https://angular.dev/tutorials' },
           { title: 'Prompt and best practices for AI', link: 'https://angular.dev/ai/develop-with-ai'},
           { title: 'CLI Docs', link: 'https://angular.dev/tools/cli' },
           { title: 'Angular Language Service', link: 'https://angular.dev/tools/language-service' },
-          { title: 'Angular DevTools', link: 'https://angular.dev/tools/devtools' }, 
+          { title: 'Angular DevTools', link: 'https://angular.dev/tools/devtools' },
         ]; track item.title) {
           <a
             class="pill"
@@ -276,8 +265,7 @@
               />
             </svg>
           </a>
-        };
-        
+        }
       </div>
       <div class="social-links">
         <a
