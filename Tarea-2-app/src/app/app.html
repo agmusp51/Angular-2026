@@ -10,6 +10,14 @@
   <div>
     <label for="nombre">Ingrese su Nombre  </label>
     <input type="text" formControlName="nombre" id="nombre">  
+ <!--   <span *ngif="getRegisterFormError('nombre')">
+      {{getRegisterFormError('nombre')}}
+    </span> -->
+    @if(getRegisterFormError('nombre')){
+      <span>
+      {{getRegisterFormError('nombre')}}
+    </span>
+    }  
   </div>    
   <div>
     <label for="email">Ingrese su Email  </label>
