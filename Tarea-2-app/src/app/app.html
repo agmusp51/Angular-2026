@@ -1,0 +1,29 @@
+ 
+  
+
+<router-outlet />
+
+<h1>Registro de Usuario</h1>
+
+
+<form [formGroup]="register_form" (ngSubmit)="submitRegisterForm()">
+  <div>
+    <label for="nombre">Ingrese su Nombre  </label>
+    <input type="text" formControlName="nombre" id="nombre">  
+  </div>    
+  <div>
+    <label for="email">Ingrese su Email  </label>
+    <input type="email" formControlName="email" id="email">
+  </div>    
+  <div>
+    <label for="password">Ingrese su Password  </label>
+    <input type="password" formControlName="password" id="password">
+  </div>    
+  <div>
+    <label for="edad">Ingrese su Edad  </label>
+     <input type="number" formControlName="edad" id="edad">
+  </div>    
+  <div>
+    <button type="sumit">Enviar</button>
+  </div>
+</form>

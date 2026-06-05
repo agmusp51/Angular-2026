@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "Entrega-2-app": {
+    "Tarea-2-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -56,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Entrega-2-app:build:production"
+              "buildTarget": "Tarea-2-app:build:production"
             },
             "development": {
-              "buildTarget": "Entrega-2-app:build:development"
+              "buildTarget": "Tarea-2-app:build:development"
             }
           },
           "defaultConfiguration": "development"
