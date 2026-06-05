@@ -9,8 +9,20 @@
 <form [formGroup]="register_form" (ngSubmit)="submitRegisterForm()">
   <div>
     <label for="nombre">Ingrese su Nombre  </label>
-    <input type="text" formControlName="nombre" id="nombre">  
- <!--   <span *ngif="getRegisterFormError('nombre')">
+    <input 
+      type="text"
+      formControlName="nombre"
+      id="nombre"
+      [ngClass]_="{
+        'invalid-input': re
+      }"
+      [ngclass]="{
+        'invalid-input': register_form.get('nombre')?.invalid 
+        && 
+        register_form.get('nombre')?.touched 
+      }"
+      >  
+    <!--   <span *ngif="getRegisterFormError('nombre')">
       {{getRegisterFormError('nombre')}}
     </span> -->
     @if(getRegisterFormError('nombre')){
